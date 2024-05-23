@@ -1,0 +1,767 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --red:#ce0033;
+    --pink:#efbcc8;
+    --lightpink:#dd5d7c;
+    --grey:#c0c0c0;
+    --rose:#fff4f4;
+    --black:var(--black);
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 2%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255 255 255 /0.9);
+    box-shadow: 0 0 10px rgb(0,0,0,0.2);
+    z-index: 10;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu {
+    display: flex;
+}
+nav .menu ul{
+    display: inline;
+    margin: 0 10px;
+}
+nav .menu li{
+    margin: 30px;
+    list-style: none;
+    font-size: 20px;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:hover{
+     color:var(--red) ;
+ }
+.logo{
+    text-align: start;
+}
+.logo img{
+    width: 150px;
+    text-align: start;
+}
+header .select{
+
+}
+header .select button{
+    background-color: var(--red);
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    border: 0;
+}
+header .select button a{
+    color: white;
+    font-size: 20px;
+    text-decoration: 0;
+}
+header .select select {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+}
+header .select select option {
+    color: var(--red);
+}
+/* histoire */
+#histoire{
+   max-width: 100%;
+   height: 100vh;
+}
+#histoire h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    font-size: 50px;
+    color: var(--red);
+}
+#histoire .histoire{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#histoire .histoire .left{
+    background-color: var(--pink);
+    position: relative;
+    right:  28vh;
+    width: 49%;
+    border-end-end-radius: 80px;
+}
+#histoire .histoire .left .premiere{
+    background-color: lightpink;
+    height: 20vh;
+    border-end-end-radius: 80px;
+}
+#histoire .histoire .left .deuxieme{
+    background-color: var(--red);
+    height: 17vh;
+    border-end-end-radius: 80px;
+}
+#histoire .histoire .left .deuxieme h2{
+    color: white;
+    text-align: end;
+    font-size: 40px;
+    margin-right: 30px;
+}
+#histoire .histoire .droit{
+    height: 550px;
+    position: relative;
+    background-color: #fff;
+    top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    border: var(--pink) solid 1px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: justify;
+
+}
+#histoire .histoire .droit::before{
+    position: absolute;
+    content: "";
+    width: 450px;
+    height: 550px;
+    transform: rotate(6deg);
+    top: -5%;
+    left: -13%;
+    z-index: -1;
+    border-radius: 20px;
+    background-color: var(--red);
+    
+}
+
+#histoire .histoire .droit p{
+    font-size: 21px;
+    height: 300px;
+}
+.droit .top-quote{
+    height: 100px;
+    font-size: 200px;
+    color: var(--pink);
+}
+.droit .bottom-quote{
+    height: 100px;
+    font-size: 200px;
+    margin-left: 80%;
+    color: var(--grey);
+
+
+}
+
+/* pédagogie */
+
+#pedagogie{
+    background-color: white;
+    width: 100%;
+    height: 160vh;
+}
+#pedagogie h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--red);
+    margin-top: 50px;
+}
+#pedagogie .pedagogie-header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+#pedagogie .pedagogie-header .pedagogie-active{
+    position: relative;
+    right: 190px;
+}
+#pedagogie .pedagogie-header .pedagogie-active h3{
+    color: var(--red);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+#pedagogie .pedagogie-header .pedagogie-active p{
+    font-size: 25px;
+    padding-top: 7px;
+}
+#pedagogie .pliers{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+}
+#pedagogie .pliers .pliers-contenair{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3,200px);
+    gap: 25px;
+    margin-top: -70px;
+}
+#pedagogie h3{
+    display: flex;
+    font-size: 36px;
+    position: relative;
+    right: 405px;
+    top: 80px;
+    justify-content: center;
+    color: var(--red);
+}
+#pedagogie .pliers .pliers-contenair .plier{
+    border: 1px solid white;
+    border-bottom: 5px solid var(--red);
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+#pedagogie .pliers .pliers-contenair .plier h1{
+    color: var(--red);
+    font-size: 35px;
+    margin: 10px;
+}
+#pedagogie .pliers .pliers-contenair .plier h4{
+ margin: 10px;
+}
+#pedagogie .pliers .pliers-contenair .plier p{
+    color: var(--grey);
+    padding-top: 4px;
+}
+#pedagogie .pliers .plier-img .omgbackground img{
+    border-end-end-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.roug{
+    background-color: #ce0033;
+    width: 400px;
+    height: 600px;
+    margin-left: 20px;
+    margin-top: -370px;
+    border-end-end-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.plier-img{
+    position: relative;
+    margin-left: 150px;
+}
+.omgbackground{
+    width: 300px;
+    height: 350px;
+}
+
+/* nos-valeur */
+#nos-valeur{
+    background-color: white;
+    width: 100%;
+}
+#nos-valeur h1{
+    display: flex;
+    justify-content: center;
+    color: var(--red);
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+#nos-valeur .valeur{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70vh;
+}
+#nos-valeur .valeur .respect{
+   
+}
+#nos-valeur .valeur .respect h3{
+    color: var(--red);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#nos-valeur .valeur .respect p{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+#nos-valeur .valeur .respect button{
+    background-color: var(--red);
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    left: 150px;
+    margin-top: 30px;
+    border: 0;
+    box-shadow:  6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+#nos-valeur .valeur .respect a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#nos-valeur .valeur .orde{
+    display: grid;
+}
+#nos-valeur .valeur .orde .orde-numero{
+    border: 1px solid white;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+    height: 10vh;
+    width: 45vh;
+    border-radius: 7px;
+
+}
+#nos-valeur .valeur .orde .orde-numero .numero{
+    background-color: var(--pink);
+    width: 42px;
+    height: 35px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    margin-left: 6px;
+    top: 30px;
+    color: var(--red);
+    font-size: 21px;
+}
+#nos-valeur .valeur .orde .orde-numero h4 {
+    margin-left: 59px;
+    font-size: 20px;
+    
+}
+#nos-valeur .valeur .orde .orde-numero p{
+    margin-left: 59px;
+}
+
+/* nos chiffres  */
+
+#nos-chiffres{
+    width: 100%;
+    background-color: white;
+}
+#nos-chiffres h1{
+    display: flex;
+    justify-content: center;
+    color: var(--red);
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+#nos-chiffres .chiffres{
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--red);
+    color: white;
+    height: 25vh;
+}
+#nos-chiffres .chiffres .chiffre{
+    align-content: center;
+}
+#nos-chiffres .chiffres .chiffre h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#nos-chiffres .chiffres .chiffre p{
+    padding-bottom: 5px;
+}
+
+/* notre equip */
+#equipes{
+    background-color: white;
+    width: 100%;
+    height: 110vh;
+}
+#equipes h1{
+    display: flex;
+    justify-content: center;
+    color: var(--red);
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+#equipes h6{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+   
+}
+#equipes .equipe{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+#equipes .equipe .membre{
+    border: 1px solid white;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 45vh;
+    height: 63vh;
+}
+#equipes .equipe .membre img{
+    margin: 30px;
+}
+#equipes .equipe .membre h4{
+    font-size: 35px;
+    margin: 16px;
+}
+#equipes .equipe .membre h5{
+    color: var(--red);
+    font-size: 25px;
+    margin-left: 16px;
+    margin-bottom: 25px;
+}
+#equipes .equipe .membre p{
+    font-size: 20px;
+    margin-left: 16px;
+    color: var(--grey);
+}
+#equipes .equipe .membre .icons{
+    margin-top: 25px;
+    font-size: 35px;
+
+}
+#equipes .equipe .membre .icons a{
+    color: var(--red);
+    padding-left: 15px;
+}
+
+/* recrutement */
+
+#recrutement{
+    width: 100%;
+    background-color: white;
+}
+#recrutement h1{
+    display: flex;
+    justify-content: center;
+    color: var(--red);
+    font-size: 46px;
+    margin-bottom: 55px;
+}
+#recrutement .rejoindre{
+    display: flex;
+    justify-content: space-evenly;
+}
+#recrutement .rejoindre .promotion img{
+    border-radius: 20px;
+    width: 690px;
+}
+#recrutement .rejoindre .rejoindre-nous h3{
+   color: var(--red);
+   font-size: 40px;
+   margin-bottom: 20px;
+}
+#recrutement .rejoindre .rejoindre-nous p{
+    font-size: 27px;
+    padding-bottom: 10px;
+}
+
+/* recrutement */
+
+#recrutement .offres{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    height: 80vh;
+}
+#recrutement .offres .offre{
+    background-color: var(--rose);
+    width: 40%;
+    height: 75vh;
+    margin-left: 20px;
+    border-radius: 18px;
+    
+}
+#recrutement .offres .offre h3{
+    color: var(--red);
+    font-size: 35px;
+    margin: 15px;
+}
+#recrutement .offres .offre hr{
+    width: 95%;
+    margin-left: 20px;
+    color: var(--lightpink);
+    margin-bottom: 18px;
+    
+}
+#recrutement .offres .offre .referent{
+    display: flex;
+    justify-content: space-evenly;
+}
+#recrutement .offres .offre .referent .referents{
+
+}
+#recrutement .offres .offre .referent .referents h5{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#recrutement .offres .offre .referent .referents h6{
+    color: var(--red);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#recrutement .offres .offre .referent .emploi{
+    background-color: white;
+    width: 25%;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+#recrutement .offres .offre .referent .emploi img{
+    width: 25px;
+    margin: 10px;
+}
+#recrutement .offres .offre .referent .emploi p{
+    display: flex;
+     
+}
+#recrutement .offres .offre button{
+    background-color: var(--red);
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    left: 290px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: 0;
+    box-shadow:  6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+#recrutement .offres .offre button a{
+   text-decoration: 0;
+   color: white;
+   font-size: 20px;
+}
+#recrutement .offres .offre h6{
+    font-size: 25px;
+    margin: 20px 10px;
+}
+#recrutement .offres .offre a {
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    margin: 20px 30px;
+}
+#recrutement .formulair{
+    display: flex;
+    width: 50%;
+    
+}
+#recrutement .formulair .form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form .name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.name input{
+    width: 48%;
+    height: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--grey);
+    
+}
+.name input::placeholder{
+    font-size: 17px;
+}
+.rej{
+    display: flex;
+    justify-content: end;
+    color: var(--red);
+    margin: 10px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--grey);
+    border-radius: 8px;
+    /* margin: 20px; */
+}
+.form label{
+    margin-top: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.form label input{
+    width: 30px;
+    height: 30px;
+}
+.form button{
+    width: 20%;
+    height: 50px;
+    background-color: var(--red);
+    border-radius: 30px;
+    border: 0;
+    color: white; 
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.form >p{
+    color: var(--grey);
+    font-size: 30px;
+}
+/* nos partenaires */
+
+#partenaires{
+    background-color: white;
+    width: 100%;
+    height: 85vh;
+    
+}
+#partenaires h1{
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
+    color: var(--red);
+    margin-bottom: 70px;
+}
+#partenaires .nos-partenaire{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 100px;
+}
+#partenaires .nos-partenaire .partenaire{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    
+}
+#partenaires .nos-partenaire .partenaire img{
+    width: 100px;
+    margin: 0px 20px;
+}
+
+/* nos platforme */
+
+#platformes{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#platformes .logo2{
+   margin: 50px;
+}
+#platformes .logo2 img{
+    filter: brightness(0) invert(1);
+    width: 250px;
+}
+#platformes .logo2 .icons{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    margin-top: 20px;
+}
+#platformes .voir-plus{
+    margin: 50px; 
+}
+#platformes .voir-plus a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+#platformes .voir-plus p{
+    color: var(--grey);
+    margin-top: 20px;
+    font-size: 25px;
+}
+#platformes .coordonnees{
+    margin: 50px; 
+}
+#platformes .coordonnees h3{
+    font-size: 30px;
+}
+#platformes .coordonnees p{
+    color: var(--grey);
+    margin-top: 20px;
+    font-size: 20px;
+}
+#platformes .coordonnees a{
+    text-decoration: 0;
+    font-size: 20px;
+    color: white;
+}
+#platformes .coordonnees a h4{
+    margin-top: 20px;
+}
+#platformes .newsletter{
+    margin: 50px; 
+}
+#platformes .newsletter h3{
+    font-size: 30px;
+}
+#platformes .newsletter p{
+    color: var(--grey);
+    margin-top: 10px;
+    font-size: 20px;
+}
+#platformes .newsletter input{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    border: 0;
+}
+#platformes .newsletter button{
+    width: 80px;
+    height: 50px;
+    background-color: var(--red);
+    border-radius: 8px;
+    border: 0;
+    color: white;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--red);
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .un{
+    margin-left: 20px;
+    font-size: 25px;
+    color: white;
+}
+footer .deux{
+    margin-right: 20px;
+}
+footer .deux p{
+    color: white;
+}
+footer .deux p i{
+    color: black;
+}
+footer .deux p span{
+    font-size: 25px;
+}
