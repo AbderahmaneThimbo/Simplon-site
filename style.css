@@ -19,11 +19,19 @@ body{
     padding: 0;
     width: 100%;
 }
+.contenair{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: -1;
+    width: 98%;
+    margin: 20px;
+}
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 90px;
     padding: 0 2%;
     top: 0;
     left: 0;
@@ -46,11 +54,13 @@ nav .menu ul{
 nav .menu li{
     margin: 30px;
     list-style: none;
-    font-size: 20px;
+    font-size: 25px;
 }
-nav a {
+nav  a {
     text-decoration: none;
+    color: black;
 }
+
 nav a:hover{
      color:var(--red) ;
  }
@@ -87,7 +97,8 @@ header .select select option {
 /* histoire */
 #histoire{
    max-width: 100%;
-   height: 100vh;
+   height: 120vh;
+   background-color: whitesmoke;
 }
 #histoire h1{
     display: flex;
@@ -102,17 +113,20 @@ header .select select option {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 #histoire .histoire .left{
     background-color: var(--pink);
     position: relative;
-    right:  28vh;
+    right:  26vh;
+    height: 21vh;
     width: 49%;
     border-end-end-radius: 80px;
 }
 #histoire .histoire .left .premiere{
     background-color: lightpink;
-    height: 20vh;
+    height: 19vh;
+    
     border-end-end-radius: 80px;
 }
 #histoire .histoire .left .deuxieme{
@@ -137,6 +151,7 @@ header .select select option {
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
     width: 450px;
     text-align: justify;
+    
 
 }
 #histoire .histoire .droit::before{
@@ -176,7 +191,8 @@ header .select select option {
 #pedagogie{
     background-color: white;
     width: 100%;
-    height: 160vh;
+    /* height: 160vh; */
+    margin-top: 80px;
 }
 #pedagogie h2 {
     display: flex;
@@ -193,9 +209,9 @@ header .select select option {
 }
 #pedagogie .pedagogie-header .pedagogie-active{
     position: relative;
-    right: 190px;
+    right: 110px;
 }
-#pedagogie .pedagogie-header .pedagogie-active h3{
+#pedagogie .pedagogie-header .pedagogie-active h4{
     color: var(--red);
     margin-bottom: 20px;
     font-size: 30px;
@@ -208,6 +224,7 @@ header .select select option {
     display: flex;
     justify-content: space-evenly;
     margin-top: 200px;
+    
 }
 #pedagogie .pliers .pliers-contenair{
     display: grid;
@@ -272,13 +289,14 @@ header .select select option {
 #nos-valeur{
     background-color: white;
     width: 100%;
+    padding: 7%;
 }
 #nos-valeur h1{
     display: flex;
     justify-content: center;
     color: var(--red);
     font-size: 42px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 #nos-valeur .valeur{
     display: flex;
@@ -286,16 +304,19 @@ header .select select option {
     height: 70vh;
 }
 #nos-valeur .valeur .respect{
-   
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   position: relative;
 }
 #nos-valeur .valeur .respect h3{
     color: var(--red);
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 20px;
 }
-#nos-valeur .valeur .respect p{
+#nos-valeur .valeur .respect .respects p{
     font-size: 25px;
-    padding-bottom: 10px;
+    line-height: 40px;
 }
 #nos-valeur .valeur .respect button{
     background-color: var(--red);
@@ -313,44 +334,58 @@ header .select select option {
     color: white;
     font-size: 20px;
 }
+#nos-valeur .valeur .respect .respects{
+    display: flex;
+    width: 80%;
+}
+.respect .respects .element{
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    width: 70px;
+    background-color: var(--red);
+    clip-path: polygon(50% 0%,0% 100%,100% 100%);
+    transform: rotate(-90deg);
+}
 #nos-valeur .valeur .orde{
     display: grid;
+    gap: 12px;
+    width: 50%;
+   
 }
 #nos-valeur .valeur .orde .orde-numero{
     border: 1px solid white;
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
-    height: 10vh;
-    width: 45vh;
+    display: flex;
+    justify-content: space-between;
     border-radius: 7px;
-
+    align-content: center;
+    font-size: 30px;
+    width: 100%;
+    padding: 20px 40px;
 }
 #nos-valeur .valeur .orde .orde-numero .numero{
     background-color: var(--pink);
-    width: 42px;
-    height: 35px;
-    border-radius: 45px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    position: relative;
-    margin-left: 6px;
-    top: 30px;
     color: var(--red);
-    font-size: 21px;
+    font-size: 35px;
+    font-weight: 800;
 }
-#nos-valeur .valeur .orde .orde-numero h4 {
-    margin-left: 59px;
-    font-size: 20px;
+#nos-valeur .valeur .orde .orde-numero div h4 {
+    font-size: 30px;
     
-}
-#nos-valeur .valeur .orde .orde-numero p{
-    margin-left: 59px;
 }
 
 /* nos chiffres  */
 
 #nos-chiffres{
+    margin-top: 190px;
     width: 100%;
     background-color: white;
 }
@@ -384,6 +419,7 @@ header .select select option {
     background-color: white;
     width: 100%;
     height: 110vh;
+    margin-top: 80px;
 }
 #equipes h1{
     display: flex;
@@ -408,7 +444,7 @@ header .select select option {
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     width: 45vh;
-    height: 63vh;
+    height: 69vh;
 }
 #equipes .equipe .membre img{
     margin: 30px;
@@ -443,13 +479,14 @@ header .select select option {
 #recrutement{
     width: 100%;
     background-color: white;
+    margin-top: 180px;
 }
 #recrutement h1{
     display: flex;
     justify-content: center;
     color: var(--red);
     font-size: 46px;
-    margin-bottom: 55px;
+    margin-bottom: 75px;
 }
 #recrutement .rejoindre{
     display: flex;
@@ -476,6 +513,7 @@ header .select select option {
     justify-content: space-evenly;
     margin-top: 100px;
     height: 80vh;
+    margin-top: 80px;
 }
 #recrutement .offres .offre{
     background-color: var(--rose);
@@ -518,13 +556,15 @@ header .select select option {
     width: 25%;
     border-radius: 25px;
     box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+   
+
 }
 #recrutement .offres .offre .referent .emploi img{
-    width: 25px;
-    margin: 10px;
+    width: 20px;
+    margin-top: 15px
 }
 #recrutement .offres .offre .referent .emploi p{
-    display: flex;
+
      
 }
 #recrutement .offres .offre button{
@@ -548,11 +588,27 @@ header .select select option {
     font-size: 25px;
     margin: 20px 10px;
 }
-#recrutement .offres .offre a {
+#recrutement .offres .offre h6 i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 190px;
+    background-color: var(--red);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+}
+#recrutement .offres .offre >a {
     display: flex;
     justify-content: end;
     font-size: 20px;
     margin: 20px 30px;
+    color: black;
+    text-underline-offset: 8px;
+}
+#recrutement .offres .offre a i{
+    margin-left: 10px;
 }
 #recrutement .formulair{
     display: flex;
@@ -603,7 +659,7 @@ textarea{
     width: 30%;
     display: flex;
     justify-content: space-between;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 50px;
 }
@@ -623,14 +679,15 @@ textarea{
 }
 .form >p{
     color: var(--grey);
-    font-size: 30px;
+    font-size: 20px;
 }
 /* nos partenaires */
 
 #partenaires{
     background-color: white;
     width: 100%;
-    height: 85vh;
+    height: 95vh;
+    margin-top: 130px;
     
 }
 #partenaires h1{
@@ -644,7 +701,7 @@ textarea{
     display: flex;
     justify-content: center;
     width: 80%;
-    margin-left: 100px;
+    margin-left: 180px;
 }
 #partenaires .nos-partenaire .partenaire{
     display: flex;
@@ -653,8 +710,8 @@ textarea{
     
 }
 #partenaires .nos-partenaire .partenaire img{
-    width: 100px;
-    margin: 0px 20px;
+    width: 150px;
+    margin: 0px 50px;
 }
 
 /* nos platforme */
@@ -738,6 +795,49 @@ textarea{
     color: white;
 }
 
+.paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    content: "";
+    background-color: var(--red);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 50%;
+    top: 10%;
+}
+.paragraph::before{
+    position: absolute;
+    content: "";
+    background-color: var(--red);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: -200%;
+    top: 5%;
+}
+.paragraph::after{
+    position: absolute;
+    content: "";
+    background-color: var(--red);
+    width: 50px;
+    height: 20px;
+    border-radius:50px;
+    left: 200%;
+    top: 5%;
+}
+.paragraph-p {
+    position: relative;
+    content: "";
+    background-color: var(--red);
+    width: 150px;
+    height: 20px;
+    border-radius: 50px;
+    left: 50%;
+    top: 5%;
+}
 /* footer */
 
 footer{
